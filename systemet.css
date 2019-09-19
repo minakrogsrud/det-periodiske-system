@@ -1,0 +1,68 @@
+body{
+  margin: 0px; /*Vi fjerner margen rundt hele nettsiden*/
+  font-family: helvetica; /*Setter en skrifttype på hele nettsiden*/
+}
+
+nav{
+  background-color: #1565c0;
+  display: flex;
+}
+
+h1{
+  font-size: 40px;
+  margin-left: 150px;
+  color: white;
+  font-style: monospace;
+}
+
+nav a{
+  color: white;
+  text-decoration: none;
+  padding: 25px; /*Lager luft*/
+}
+
+nav .active{ /*Velger klassen active inne i nav*/
+  background-color: #0d47a1; */Setter bakgrunnsfare paa elementet som er active*/
+}
+
+nav a:hover:not(.active){ /*Velger a-elementer som musen er over inne i nav, men ikke elementer som har klassen active*/
+  background-color: #82b1ff; /*Setter bakgrunnsfarge*/
+}
+
+.blue{
+  background-color: lightblue;
+}
+
+.red{
+  background-color: salmon;
+}
+.systemet{
+  display: grid;
+  grid-template-columns: repeat(18,1fr);
+  grid-gap: 5px;
+}
+.span-6{
+  grid-column: span 16;
+}
+
+.span-4{
+  grid-column: span 10;
+}
+
+.usynlig{
+  opacity: 0;
+}
+
+.grunnstoff{
+  border-style: solid;
+  border-radius: 5px;
+  border-color: black;
+}
+
+.tall, .navn{
+  text-align: center;
+}
+
+.tall{
+  font-size: 24px;
+}
